@@ -60,6 +60,8 @@ import org.mokee.hardware.ColorEnhancement;
 import org.mokee.hardware.SunlightEnhancement;
 import org.mokee.hardware.SweepToWake;
 import org.mokee.hardware.TapToWake;
+import org.mokee.hardware.Dt2w;
+import org.mokee.hardware.S2w;
 
 import java.util.ArrayList;
 
@@ -84,6 +86,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_ADAPTIVE_BACKLIGHT = "adaptive_backlight";
     private static final String KEY_SUNLIGHT_ENHANCEMENT = "sunlight_enhancement";
     private static final String KEY_COLOR_ENHANCEMENT = "color_enhancement";
+    private static final String KEY_DT2W = "dt2w";
+    private static final String KEY_S2W = "s2w";
     private static final String KEY_ADVANCED_DISPLAY_SETTINGS = "advanced_display_settings";
     private static final String KEY_SWEEP_TO_WAKE = "sweep_wake_gesture";
     private static final String KEY_TAP_TO_WAKE = "double_tap_wake_gesture";
@@ -131,6 +135,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mAdaptiveBacklight;
     private CheckBoxPreference mSunlightEnhancement;
     private CheckBoxPreference mColorEnhancement;
+    private CheckBoxPreference mDt2w;
+    private CheckBoxPreference mS2w;
     private CheckBoxPreference mTapToWake;
     private ListPreference mSweepToWake;
 
@@ -261,6 +267,18 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (!isColorEnhancementSupported()) {
             advancedPrefs.removePreference(mColorEnhancement);
             mColorEnhancement = null;
+        }
+
+        mDt2w = (CheckBoxPreference) findPreference(KEY_DT2W);
+        if (!isDt2wSupported()) {
+            advancedPrefs.removePreference(mDt2w);
+            mDt2w = null;
+        }
+
+        mS2w = (CheckBoxPreference) findPreference(KEY_S2W);
+        if (!isS2wSupported()) {
+            advancedPrefs.removePreference(mS2w);
+            mS2w = null;
         }
 
         mTapToWake = (CheckBoxPreference) findPreference(KEY_TAP_TO_WAKE);
@@ -492,6 +510,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         if (mColorEnhancement != null) {
             mColorEnhancement.setChecked(ColorEnhancement.isEnabled());
         }
+  
+        if (mDt2w != null) {
+            mDt2w.setChecked(Dt2w.isEnabled());
+        }
+
+        if (mS2w != null) {
+            mS2w.setChecked(S2w.isEnabled());
+        }
 
         if (mTapToWake != null) {
             mTapToWake.setChecked(TapToWake.isEnabled());
@@ -606,6 +632,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             return SunlightEnhancement.setEnabled(mSunlightEnhancement.isChecked());
         } else if (preference == mColorEnhancement) {
             return ColorEnhancement.setEnabled(mColorEnhancement.isChecked());
+        } else if (preference == mDt2w) {
+            return Dt2w.setEnabled(mDt2w.isChecked());
+        } else if (preference == mS2w) {
+            return S2w.setEnabled(mS2w.isChecked());
         } else if (preference == mWakeWhenPluggedOrUnplugged) {
             Settings.Global.putInt(getContentResolver(),
                     Settings.Global.WAKE_WHEN_PLUGGED_OR_UNPLUGGED,
@@ -741,6 +771,26 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             }
         }
 
+        if (isDt2wSupported()) {
+            final boolean enabled = prefs.getBoolean(KEY_DT2W,
+                    Dt2w.isEnabled());
+            if (!Dt2w.setEnabled(enabled)) {
+                Log.e(TAG, "Failed to restore DT2W settings.");
+            } else {
+                Log.d(TAG, "Color DT2W restored.");
+            }
+        }
+
+        if (isS2wSupported()) {
+            final boolean enabled = prefs.getBoolean(KEY_S2W,
+                    S2w.isEnabled());
+            if (!S2w.setEnabled(enabled)) {
+                Log.e(TAG, "Failed to restore S2W settings.");
+            } else {
+                Log.d(TAG, "Color S2W restored.");
+            }
+        }
+
         if (isTapToWakeSupported()) {
             final boolean enabled = prefs.getBoolean(KEY_TAP_TO_WAKE,
                     TapToWake.isEnabled());
@@ -793,6 +843,24 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static boolean isColorEnhancementSupported() {
         try {
             return ColorEnhancement.isSupported();
+        } catch (NoClassDefFoundError e) {
+            // Hardware abstraction framework not installed
+            return false;
+        }
+    }
+
+    private static boolean isDt2wSupported() {
+        try {
+            return Dt2w.isSupported();
+        } catch (NoClassDefFoundError e) {
+            // Hardware abstraction framework not installed
+            return false;
+        }
+    }
+
+    private static boolean isS2wSupported() {
+        try {
+            return S2w.isSupported();
         } catch (NoClassDefFoundError e) {
             // Hardware abstraction framework not installed
             return false;

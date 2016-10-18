@@ -165,6 +165,18 @@
                 android:key="double_tap_wake_gesture"
                 android:title="@string/double_tap_to_wake_title" />
 
+            <CheckBoxPreference
+                android:key="dt2w"
+                android:title="@string/dt2w_title"
+                android:summary="@string/dt2w_summary"
+                android:defaultValue="true" />
+
+            <CheckBoxPreference
+                android:key="s2w"
+                android:title="@string/s2w_title"
+                android:summary="@string/s2w_summary"
+                android:defaultValue="true" />
+
             <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
                 android:key="proximity_on_wake"
                 android:title="@string/proximity_wake_title"

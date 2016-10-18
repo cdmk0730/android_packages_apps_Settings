@@ -20,6 +20,7 @@
   <string name="wifi_setting_countrycode_error">Bölgə kodunu tənzimləyərkən problem yarandı.</string>
   <string name="change_crypt_password_title">Şifrəni dəyişdir</string>
   <string name="lock_screen_title">Kilit ekranı</string>
+  <string name="increasing_ring_title">Artan melodiya</string>
   <string name="increasing_ring_interval_half_second">0.5 saniyə</string>
   <string name="increasing_ring_interval_1second">1 saniyə</string>
   <string name="increasing_ring_interval_2seconds">2 saniyə</string>
@@ -50,6 +51,7 @@
   <string name="settings_search_action_bar_button">Axtar</string>
   <string name="settings_search_autocompleteview_hint">Axtarış tənzimləmələri</string>
   <string name="settings_search_loading_text">Axtarış məlumatı yüklənir\u2026</string>
+  <string name="connection_state_disabled">Ləğv et</string>
   <string name="profile_profiles_manage">Profillər</string>
   <string name="profile_profile_manage">Profili idarə et</string>
   <string name="profile_appgroups_manage">Tətbiqetmə qrupları</string>
@@ -57,6 +59,7 @@
   <string name="profile_settings">Profil tənzimləməsi</string>
   <string name="profile_trigger_connect">Qoşulanda</string>
   <string name="sound_mode">Bildiriş rejimi</string>
+  <string name="soundtone_title">Bildiriş tonu</string>
   <string name="profile_appgroups_title">Tətbiqetmə qrupları</string>
   <string name="profile_applist_title">Tətbiqetmələr</string>
   <string name="profile_new_appgroup">Yeni tətbiqetmə qrupu</string>
@@ -66,13 +69,20 @@
   <string name="profile_choose_app">Tətbiqetmə seç</string>
   <string name="profile_system_settings_title">Sistem tənzimləməsi</string>
   <string name="profile_lockmode_title">Kilit ekranı rejimi</string>
+  <string name="profile_lockmode_disabled">Ləğv edildi</string>
+  <string name="profile_lockmode_disabled_summary">Kilit ekranı ləğv edildi</string>
   <string name="profile_airplanemode_title">Uçuş rejimi</string>
   <string name="toggleWifi">Wi\u2011Fi</string>
   <string name="toggleBluetooth">Bluetooth</string>
   <string name="toggleGPS">GPS</string>
+  <string name="toggleData">Mobil verilənlər</string>
+  <string name="toggleSync">Verilənləri avtomatik eyniləşdirmə
+</string>
   <string name="toggle2g3g">2G/3G</string>
   <string name="toggleWimax">WiMAX</string>
   <string name="toggleNfc">NFC</string>
+  <string name="volume_ring_only_description">Melodiya</string>
+  <string name="link_volume_mutes">Səssiz rejim bildirişlərə təsir edir</string>
   <string name="ring_mode_mute">Səssiz</string>
   <string name="volume_overlay_title">Səs paneli stili</string>
   <string name="volume_overlay_none">Yoxdur</string>
@@ -86,8 +96,10 @@
   <string name="notification_light_general_title">Ümumi</string>
   <string name="notification_light_applist_title">Tətbiqetmələr</string>
   <string name="notification_light_phonelist_title">Telefon</string>
+  <string name="notification_light_disabled">Ləğv edildi</string>
   <string name="notification_light_missed_call_title">Cavabsız zəng</string>
   <string name="notification_light_voicemail_title">Səsli poçt</string>
+  <string name="screen_animation_style_disabled">Ləğv edildi</string>
   <string name="default_time">Normal</string>
   <string name="custom_time">Xüsusi</string>
   <string name="dialog_delete_title">Sil</string>

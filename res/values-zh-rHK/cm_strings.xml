@@ -437,6 +437,10 @@
   <string name="collapse_on_dismiss_if_empty_summary">移除最後一則通知後關閉</string>
   <string name="collapse_on_dismiss_if_no_clearable_summary">移除最後一則可移除的通知後關閉</string>
   <string name="double_tap_to_wake_title">輕按兩下來喚醒</string>
+  <string name="dt2w_title">雙擊喚醒</string>
+  <string name="dt2w_summary">螢幕關閉狀態下透過雙擊螢幕喚醒手機</string>
+  <string name="s2w_title">滑動喚醒</string>
+  <string name="s2w_summary">螢幕關閉狀態下透過滑動螢幕喚醒手機</string>
   <string name="proximity_wake_summary">喚醒畫面前檢查傳感器</string>
   <string name="category_quick_access">快速存取功能區</string>
   <string name="title_quick_access">顯示在抽屜</string>

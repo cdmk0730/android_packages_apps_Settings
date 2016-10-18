@@ -18,7 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="wifi_setting_countrycode_title">Wifi-regiocode</string>
   <string name="wifi_setting_countrycode_summary">Regiocode opgeven voor wifi</string>
-  <string name="wifi_setting_countrycode_error">Kan regiocode niet instellen</string>
+  <string name="wifi_setting_countrycode_error">Kan regiocode niet instellen.</string>
   <string name="wifi_setting_priority_title">Wifi-prioriteit</string>
   <string name="wifi_setting_priority_summary">Prioriteit instellen van wifi-netwerken</string>
   <string name="wifi_ssid_input_limit">SSID te lang</string>
@@ -373,8 +373,8 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="quiet_hours_still_summary">Trillen uitschakelen</string>
   <string name="quiet_hours_dim">Meldingsled</string>
   <string name="quiet_hours_dim_summary">Meldingsled uitschakelen</string>
-  <string name="quiet_hours_haptic">Haptische feedback</string>
-  <string name="quiet_hours_haptic_summary">Haptische feedback uitschakelen</string>
+  <string name="quiet_hours_haptic">Trillen</string>
+  <string name="quiet_hours_haptic_summary">Trillen uitschakelen</string>
   <string name="quiet_hours_active_period">Actief van <xliff:g id="start">%1$s</xliff:g> tot <xliff:g id="end">%2$s</xliff:g></string>
   <string name="quiet_hours_ringer_allow_all">Beltoon bij alle oproepen</string>
   <string name="quiet_hours_ringer_allow_contacts">Beltoon bij oproepen van contacten</string>
@@ -482,7 +482,7 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="adb_notify">USB-foutopsporingsmodus melden</string>
   <string name="adb_notify_summary">Melding tonen indien USB-foutopsporingmodus is ingeschakeld</string>
   <string name="adb_over_network">ADB over netwerk</string>
-  <string name="adb_over_network_summary">TCP/IP-foutopsporing inschakelen over netwerkinterfaces (wifi, USB-netwerken). Wordt hersteld bij opstarten</string>
+  <string name="adb_over_network_summary">TCP/IP-foutopsporing inschakelen over netwerkinterfaces (wifi, USB-netwerken). Wordt gereset bij opstarten</string>
   <string name="adb_over_network_warning">Let op: als ADB over netwerk is ingeschakeld, kan op uw apparaat worden ingebroken via alle aangesloten netwerken, inclusief via uw GSM-gegevensnetwerk!\n\nGebruik deze functie alleen indien u verbonden bent met vertrouwde netwerken.\n\nWeet u zeker dat u deze functie wilt inschakelen?</string>
   <string name="device_hostname">Hostnaam apparaat</string>
   <string name="notification_drawer_title">Meldingenpaneel</string>
@@ -571,6 +571,7 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="lockscreen_buttons_toggle_sound">Geluid aan/uit</string>
   <string name="lockscreen_buttons_sleep">Slaapstand</string>
   <string name="lockscreen_enable_modlock_title">Aangepast vergrendelingsscherm</string>
+  <string name="lockscreen_buttons_disabled_summary">Knoppen op vergrendelingsscherm niet beschikbaar bij on-screen navigatiebalk</string>
   <string name="navigation_bar_category">Navigatiebalk</string>
   <string name="navigation_bar_title">Knoppen en indeling</string>
   <string name="navigation_bar_left_title">Linkshandige modus</string>
@@ -641,7 +642,7 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="home_answer_call_title">Oproep beantwoorden</string>
   <string name="home_answer_call_summary">Inkomende oproep beantwoorden door op de thuisknop te drukken</string>
   <string name="camera_wake_summary">Apparaat ontwaken door op de cameraknop te drukken</string>
-  <string name="camera_sleep_on_release_title">Scherm</string>
+  <string name="camera_sleep_on_release_title">Scherm kort aan</string>
   <string name="camera_sleep_on_release_summary">Scherm aan tijdens half indrukken knop</string>
   <string name="camera_music_controls_title">Muziek beheren</string>
   <string name="camera_music_controls_summary">Bij scherm uit huidig nummer afspelen/pauzeren door cameraknop lang in te drukken</string>
@@ -702,10 +703,10 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="enable_spen_title_head">Gebaren inschakelen</string>
   <string name="enable_spen_summary_head">Gebaren gebruiken met de stylusknop ingedrukt</string>
   <string name="gestures_subcat_title">Gebaren</string>
-  <string name="gestures_left_spen_title_head">Sleep naar links</string>
-  <string name="gestures_right_spen_title_head">Sleep naar rechts</string>
-  <string name="gestures_up_spen_title_head">Sleep omhoog</string>
-  <string name="gestures_down_spen_title_head">Sleep omlaag</string>
+  <string name="gestures_left_spen_title_head">Veeg naar links</string>
+  <string name="gestures_right_spen_title_head">Veeg naar rechts</string>
+  <string name="gestures_up_spen_title_head">Veeg omhoog</string>
+  <string name="gestures_down_spen_title_head">Veeg omlaag</string>
   <string name="gestures_long_spen_title_head">Lang aanraken</string>
   <string name="gestures_double_spen_title_head">Dubbeltik</string>
   <string name="gestures_settings_header_title">Gebaren</string>
@@ -886,7 +887,7 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="usb_sd_format">USB-opslag wissen</string>
   <string name="usb_sd_format_summary">Alle gegevens in USB-opslag wissen, zoals muziek en foto\'s</string>
   <string name="usb_dlg_confirm_unmount_title">USB-opslag ontkoppelen?</string>
-  <string name="usb_dlg_confirm_unmount_text">Als u de USB-opslag ontkoppelt, worden bepaalde apps die u gebruikt, gestopt en komen deze mogelijk pas weer beschikbaar wanneer u de USB-opslag opnieuw koppelt.</string>
+  <string name="usb_dlg_confirm_unmount_text">Als u de USB-opslag ontkoppelt, worden bepaalde apps die u gebruikt gestopt en komen deze mogelijk pas weer beschikbaar wanneer u de USB-opslag opnieuw koppelt.</string>
   <string name="usb_dlg_error_unmount_text">Kan USB-opslag niet ontkoppelen. Probeer het later opnieuw.</string>
   <string name="usb_unmount_inform_text">USB-opslag wordt ontkoppeld.</string>
   <string name="usb_sd_ejecting_title">USB-opslag ontkoppelen</string>
@@ -894,7 +895,7 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="usb_media_format_title">USB-opslag wissen</string>
   <string name="usb_media_format_desc">Alle USB-opslag wissen? <b>Alle</b> opgeslagen gegevens gaan verloren.</string>
   <string name="usb_media_format_button_text">USB-opslag wissen</string>
-  <string name="usb_media_format_final_desc">USB-opslag formatteren en alle opgeslagen bestanden wissen? U kunt deze actie niet ongedaan maken.</string>
+  <string name="usb_media_format_final_desc">USB-opslag wissen en alle opgeslagen bestanden verwijderen? U kunt deze actie niet ongedaan maken.</string>
   <string name="usb_media_format_gesture_explanation">U moet het ontgrendelingspatroon tekenen om te bevestigen dat u de USB-opslag wilt wissen.</string>
   <string name="sd_sd_eject">SD-kaart ontkoppelen</string>
   <string name="sd_sd_eject_summary">Ontkoppel de SD-kaart zodat u deze veilig kunt verwijderen</string>
@@ -903,7 +904,7 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="sd_sd_format">SD-kaart wissen</string>
   <string name="sd_sd_format_summary">Alle gegevens op de SD-kaart wissen, zoals muziek en foto\'s</string>
   <string name="sd_dlg_confirm_unmount_title">SD-kaart ontkoppelen?</string>
-  <string name="sd_dlg_confirm_unmount_text">Als u de SD-kaart ontkoppelt, worden bepaalde apps die u gebruikt, gestopt en komen deze mogelijk pas weer beschikbaar wanneer u de SD-kaart opnieuw koppelt.</string>
+  <string name="sd_dlg_confirm_unmount_text">Als u de SD-kaart ontkoppelt, worden bepaalde apps die u gebruikt gestopt en komen deze mogelijk pas weer beschikbaar wanneer u de SD-kaart opnieuw koppelt.</string>
   <string name="sd_dlg_error_unmount_text">Kan SD-kaart niet ontkoppelen. Probeer het later opnieuw.</string>
   <string name="sd_unmount_inform_text">SD-kaart wordt ontkoppeld.</string>
   <string name="sd_sd_ejecting_title">SD-kaart ontkoppelen</string>
@@ -913,6 +914,11 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="sd_media_format_button_text">SD-kaart wissen</string>
   <string name="sd_media_format_final_desc">SD-kaart wissen en alle opgeslagen bestanden verwijderen? U kunt deze actie niet ongedaan maken.</string>
   <string name="sd_media_format_gesture_explanation">U moet het ontgrendelingspatroon tekenen om te bevestigen dat u de SD-kaart wilt wissen.</string>
+  <string name="internal_sd_format">Interne mediaopslag wissen</string>
+  <string name="internal_sd_format_summary">Alle gegevens op interne mediaopslag wissen, zoals muziek en foto\'s</string>
+  <string name="master_clear_desc_erase_internal_storage">\n\nOm muziek, foto\'s en andere gebruikersgegevens te verwijderen, moet de <b>interne mediaopslag</b> worden gewist.</string>
+  <string name="erase_internal_storage">Interne mediaopslag wissen</string>
+  <string name="erase_internal_storage_description">Alle gegevens op interne mediaopslag wissen, zoals muziek en foto\'s</string>
   <string name="bluetooth_enter_pin_msg_hs">Typ om te koppelen met <xliff:g id="bold">&lt;br&gt;&lt;b&gt;</xliff:g><xliff:g id="device_name">%1$s</xliff:g><xliff:g id="end_bold">&lt;/b&gt;&lt;br&gt;&lt;br&gt;</xliff:g> de vereiste pincode van het apparaat (16 cijfers of meer):</string>
   <string name="bluetooth_profile_sap">SIM-toegang</string>
   <string name="bluetooth_profile_dun">Inbelnetwerktoegang</string>
@@ -979,4 +985,9 @@ Extra opties zijn beschikbaar door een regel lang aan te raken. Door \'Aanpassen
   <string name="no_triggers_configured">Geen triggers ingesteld. Tik om toe te voegen.</string>
   <string name="no_triggers_configured_nfc">Tik om nieuwe NFC-trigger in te stellen.</string>
   <string name="sound_ringtone_multisim_options">Standaardbeltoon wijzigen</string>
+  <string name="lock_to_cyanogen_title">Apparaatbeveiliging</string>
+  <string name="lock_to_cyanogen_summary">Uw Cyanogen OS-accountwachtwoord vereisen, zelfs na een herstel naar fabrieksinstellingen</string>
+  <string name="lock_to_cyanogen_create_account_msg">Uw apparaat gebruikt het wachtwoord van uw Cyanogen OS-account om zich te beschermen, zelfs wanneer de fabrieksinstellingen hersteld zijn. U dient hiervoor een Cyanogen OS-account aan te maken.</string>
+  <string name="lock_to_cyanogen_disable_msg">Door deze functie uit te schakelen kunnen onbevoegde gebruikers uw telefoon herstellen naar fabrieksinstellingen wanneer deze gestolen is. Uw persoonlijke gegevens zijn mogelijk niet beschermd. Wilt u deze functie toch uitschakelen?</string>
+  <string name="lock_to_cyanogen_master_clear_warning">Apparaatbeveiliging is ingeschakeld. Schakel dit uit als u door wilt gaan met het opnieuw instellen van uw apparaat.</string>
 </resources>
